@@ -22,7 +22,7 @@ export default function ResultsComp(props) {
     <div className={`resultsContainer container mt-4 ${showEffect ? 'showEffect' : ''} `}>
 
       <div className='position-relative d-flex flex-column shadow rounded flex-sm-row justify-content-between align-items-center pe-2 py-2 listBgColor' >
-        <span className='ms-2' onClick={handleInfo}><img className='listBgColor makeBigger' src={infoPic} alt="" height={32} width={32} />
+        <span className='ms-2 listBgColor' onClick={handleInfo}><img className='listBgColor makeBigger ' src={infoPic} alt="" height={32} width={32} />
           <span className={infoVisible ? 'showInfo' : 'hideInfo'}> {info}</span></span>
 
         <div className='d-flex justify-content-around w-100 ms-0 listBgColor'>

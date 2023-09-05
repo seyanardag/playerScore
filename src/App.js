@@ -31,10 +31,10 @@ function App() {
     let regexResult = !pattern.test(playerScore)
     const isScoreValid = ((regexResult) && (playerScore <= 100) && (playerScore.length > 0))
     switch (true) {
-      case name.length < 3:
+      case name.length < 2:
         setErrMessage('Names should not be shorter than 2 chars. Please check player name!')
         break;
-      case surname < 3:
+      case surname < 2 :
         setErrMessage('Surnames should not be shorter than 2 chars. Please check player name!')
         break;
       case country.length < 1:
